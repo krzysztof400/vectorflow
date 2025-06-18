@@ -1,0 +1,2 @@
+/sbin/ar qc libnn_lib.a CMakeFiles/nn_lib.dir/src/model.cpp.o CMakeFiles/nn_lib.dir/src/data_utils.cpp.o
+/sbin/ranlib libnn_lib.a

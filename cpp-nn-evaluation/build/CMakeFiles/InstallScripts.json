@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

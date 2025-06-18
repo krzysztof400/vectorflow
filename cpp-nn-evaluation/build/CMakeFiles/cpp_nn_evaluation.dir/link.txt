@@ -1,0 +1,1 @@
+/sbin/c++ -Wl,--dependency-file=CMakeFiles/cpp_nn_evaluation.dir/link.d CMakeFiles/cpp_nn_evaluation.dir/src/main.cpp.o -o cpp_nn_evaluation  libnn_lib.a
