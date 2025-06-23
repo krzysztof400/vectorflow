@@ -57,4 +57,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/nn_lib.dir/DependInfo.cmake"
   "CMakeFiles/cpp_nn_evaluation.dir/DependInfo.cmake"
   "CMakeFiles/evaluation_test.dir/DependInfo.cmake"
+  "CMakeFiles/emnist_test.dir/DependInfo.cmake"
   )

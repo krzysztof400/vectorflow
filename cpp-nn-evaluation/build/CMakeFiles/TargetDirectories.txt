@@ -1,5 +1,6 @@
 /home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles/nn_lib.dir
 /home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles/cpp_nn_evaluation.dir
 /home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles/evaluation_test.dir
+/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles/emnist_test.dir
 /home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles/edit_cache.dir
 /home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles/rebuild_cache.dir

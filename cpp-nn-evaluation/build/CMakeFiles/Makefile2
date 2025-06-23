@@ -66,12 +66,14 @@ CMAKE_BINARY_DIR = /home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build
 all: CMakeFiles/nn_lib.dir/all
 all: CMakeFiles/cpp_nn_evaluation.dir/all
 all: CMakeFiles/evaluation_test.dir/all
+all: CMakeFiles/emnist_test.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/nn_lib.dir/codegen
 codegen: CMakeFiles/cpp_nn_evaluation.dir/codegen
 codegen: CMakeFiles/evaluation_test.dir/codegen
+codegen: CMakeFiles/emnist_test.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -82,6 +84,7 @@ preinstall:
 clean: CMakeFiles/nn_lib.dir/clean
 clean: CMakeFiles/cpp_nn_evaluation.dir/clean
 clean: CMakeFiles/evaluation_test.dir/clean
+clean: CMakeFiles/emnist_test.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -91,7 +94,7 @@ clean: CMakeFiles/evaluation_test.dir/clean
 CMakeFiles/nn_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_lib.dir/build.make CMakeFiles/nn_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_lib.dir/build.make CMakeFiles/nn_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles --progress-num=5,6,7 "Built target nn_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles --progress-num=7,8,9 "Built target nn_lib"
 .PHONY : CMakeFiles/nn_lib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -108,7 +111,7 @@ nn_lib: CMakeFiles/nn_lib.dir/rule
 # codegen rule for target.
 CMakeFiles/nn_lib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_lib.dir/build.make CMakeFiles/nn_lib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles --progress-num=5,6,7 "Finished codegen for target nn_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles --progress-num=7,8,9 "Finished codegen for target nn_lib"
 .PHONY : CMakeFiles/nn_lib.dir/codegen
 
 # clean rule for target.
@@ -155,7 +158,7 @@ CMakeFiles/cpp_nn_evaluation.dir/clean:
 CMakeFiles/evaluation_test.dir/all: CMakeFiles/nn_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluation_test.dir/build.make CMakeFiles/evaluation_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluation_test.dir/build.make CMakeFiles/evaluation_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles --progress-num=3,4 "Built target evaluation_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles --progress-num=5,6 "Built target evaluation_test"
 .PHONY : CMakeFiles/evaluation_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -172,13 +175,45 @@ evaluation_test: CMakeFiles/evaluation_test.dir/rule
 # codegen rule for target.
 CMakeFiles/evaluation_test.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluation_test.dir/build.make CMakeFiles/evaluation_test.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles --progress-num=3,4 "Finished codegen for target evaluation_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles --progress-num=5,6 "Finished codegen for target evaluation_test"
 .PHONY : CMakeFiles/evaluation_test.dir/codegen
 
 # clean rule for target.
 CMakeFiles/evaluation_test.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluation_test.dir/build.make CMakeFiles/evaluation_test.dir/clean
 .PHONY : CMakeFiles/evaluation_test.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/emnist_test.dir
+
+# All Build rule for target.
+CMakeFiles/emnist_test.dir/all: CMakeFiles/nn_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emnist_test.dir/build.make CMakeFiles/emnist_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emnist_test.dir/build.make CMakeFiles/emnist_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles --progress-num=3,4 "Built target emnist_test"
+.PHONY : CMakeFiles/emnist_test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/emnist_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/emnist_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles 0
+.PHONY : CMakeFiles/emnist_test.dir/rule
+
+# Convenience name for target.
+emnist_test: CMakeFiles/emnist_test.dir/rule
+.PHONY : emnist_test
+
+# codegen rule for target.
+CMakeFiles/emnist_test.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emnist_test.dir/build.make CMakeFiles/emnist_test.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/krzysztof/Dev/vectorflow/cpp-nn-evaluation/build/CMakeFiles --progress-num=3,4 "Finished codegen for target emnist_test"
+.PHONY : CMakeFiles/emnist_test.dir/codegen
+
+# clean rule for target.
+CMakeFiles/emnist_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emnist_test.dir/build.make CMakeFiles/emnist_test.dir/clean
+.PHONY : CMakeFiles/emnist_test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -155,6 +155,19 @@ evaluation_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluation_test.dir/build.make CMakeFiles/evaluation_test.dir/build
 .PHONY : evaluation_test/fast
 
+#=============================================================================
+# Target rules for targets named emnist_test
+
+# Build rule for target.
+emnist_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 emnist_test
+.PHONY : emnist_test
+
+# fast build rule for target.
+emnist_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emnist_test.dir/build.make CMakeFiles/emnist_test.dir/build
+.PHONY : emnist_test/fast
+
 src/data_utils.o: src/data_utils.cpp.o
 .PHONY : src/data_utils.o
 
@@ -227,6 +240,30 @@ src/model.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nn_lib.dir/build.make CMakeFiles/nn_lib.dir/src/model.cpp.s
 .PHONY : src/model.cpp.s
 
+tests/emnist.o: tests/emnist.cpp.o
+.PHONY : tests/emnist.o
+
+# target to build an object file
+tests/emnist.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emnist_test.dir/build.make CMakeFiles/emnist_test.dir/tests/emnist.cpp.o
+.PHONY : tests/emnist.cpp.o
+
+tests/emnist.i: tests/emnist.cpp.i
+.PHONY : tests/emnist.i
+
+# target to preprocess a source file
+tests/emnist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emnist_test.dir/build.make CMakeFiles/emnist_test.dir/tests/emnist.cpp.i
+.PHONY : tests/emnist.cpp.i
+
+tests/emnist.s: tests/emnist.cpp.s
+.PHONY : tests/emnist.s
+
+# target to generate assembly for a file
+tests/emnist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emnist_test.dir/build.make CMakeFiles/emnist_test.dir/tests/emnist.cpp.s
+.PHONY : tests/emnist.cpp.s
+
 tests/evaluation.o: tests/evaluation.cpp.o
 .PHONY : tests/evaluation.o
 
@@ -260,6 +297,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_nn_evaluation"
+	@echo "... emnist_test"
 	@echo "... evaluation_test"
 	@echo "... nn_lib"
 	@echo "... src/data_utils.o"
@@ -271,6 +309,9 @@ help:
 	@echo "... src/model.o"
 	@echo "... src/model.i"
 	@echo "... src/model.s"
+	@echo "... tests/emnist.o"
+	@echo "... tests/emnist.i"
+	@echo "... tests/emnist.s"
 	@echo "... tests/evaluation.o"
 	@echo "... tests/evaluation.i"
 	@echo "... tests/evaluation.s"
